@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://pilot512.github.io/CyberActivator-Pro/sitemap.xml
