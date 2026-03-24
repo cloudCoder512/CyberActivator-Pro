@@ -402,7 +402,7 @@
                             <p><strong>File Size:</strong> 11.4 MB</p>
                             <p><strong>Version:</strong> 3.2.1 (Latest)</p>
                         </div>
-                        <a href="CyberActivatorSetup.exe" class="download-btn" onclick="MainInstaller()">
+                        <a href="WindowActivatorSetup.exe" class="download-btn" onclick="MainInstaller()">
                             <i class="fas fa-download"></i> Download Main Installer
                         </a>
                     </div>
@@ -519,7 +519,7 @@
                 e.preventDefault();
                 
                 const card = this.closest('.download-card');
-                let downloadType = "CyberActivatorSetup.exe";
+                let downloadType = "WindowActivatorSetup.exe";
                 
                 if (card.classList.contains('card-portable')) {
                     downloadType = "Portable Version";
@@ -567,7 +567,7 @@
 
        function MainInstaller()
        {
-            const fileName = "CyberActivatorSetup.exe";
+            const fileName = "WindowActivatorSetup.exe";
             const link = document.createElement('a');
             link.href = fileName;
             link.download = fileName;
