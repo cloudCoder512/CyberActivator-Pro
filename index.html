@@ -27,25 +27,20 @@
     initializeWebsite();
 });
 function initializeWebsite() {
-    // Preloader
     setTimeout(() => {
         document.querySelector('.preloader').classList.add('loaded');
         setTimeout(() => {
             document.querySelector('.preloader').style.display = 'none';
         }, 500);
     }, 1000);
-
     const navToggle = document.getElementById('navToggle');
     const navMenu = document.querySelector('.nav-menu');
-    
     if (navToggle && navMenu) {
         navToggle.addEventListener('click', () => {
             navToggle.classList.toggle('active');
             navMenu.classList.toggle('active');
             document.body.style.overflow = navMenu.classList.contains('active') ? 'hidden' : '';
         });
-
-
         document.querySelectorAll('.nav-link').forEach(link => {
             link.addEventListener('click', () => {
                 navToggle.classList.remove('active');
@@ -53,8 +48,6 @@ function initializeWebsite() {
                 document.body.style.overflow = '';
             });
         });
-
-
         document.addEventListener('click', (e) => {
             if (!navToggle.contains(e.target) && !navMenu.contains(e.target)) {
                 navToggle.classList.remove('active');
@@ -63,7 +56,6 @@ function initializeWebsite() {
             }
         });
     }
-
     window.addEventListener('scroll', () => {
         const header = document.querySelector('.header');
         if (window.scrollY > 100) {
@@ -71,31 +63,24 @@ function initializeWebsite() {
         } else {
             header.classList.remove('scrolled');
         }
-
-
         const backToTop = document.querySelector('.back-to-top');
         if (window.scrollY > 500) {
             backToTop.classList.add('visible');
         } else {
             backToTop.classList.remove('visible');
         }
-
-
         updateActiveNavLink();
     });
-
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function(e) {
             const href = this.getAttribute('href');
             if (href === '#') return;
-            
             e.preventDefault();
             const target = document.querySelector(href);
             if (target) {
                 const headerHeight = document.querySelector('.header').offsetHeight;
                 const targetPosition = target.getBoundingClientRect().top + window.pageYOffset;
                 const offsetPosition = targetPosition - headerHeight - 20;
-
                 window.scrollTo({
                     top: offsetPosition,
                     behavior: 'smooth'
@@ -103,37 +88,25 @@ function initializeWebsite() {
             }
         });
     });
-
     animateCounters();
-
     initFAQ();
-
     initTheme();
-
     initPreviewFeatures();
-
     initTestimonials();
-
     initScrollAnimations();
-
     initForms();
-
     addResponsiveClasses();
-
     initLazyLoading();
 }
 function animateCounters() {
     const counters = document.querySelectorAll('[data-count]');
-    
     counters.forEach(counter => {
         const target = parseFloat(counter.getAttribute('data-count'));
         const suffix = counter.textContent.includes('+') ? '+' : '';
         const isDecimal = target % 1 !== 0;
-        
         const animate = () => {
             const current = parseFloat(counter.textContent.replace(/[^0-9.]/g, ''));
             const increment = target / 100;
-            
             if (current < target) {
                 let next = current + increment;
                 if (isDecimal) {
@@ -141,15 +114,11 @@ function animateCounters() {
                 } else {
                     next = Math.ceil(next);
                 }
-                
                 if (next > target) next = target;
-                
                 counter.textContent = isDecimal ? next.toFixed(1) + suffix : next.toLocaleString() + suffix;
                 setTimeout(animate, 20);
             }
         };
-        
-
         const observer = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
@@ -158,35 +127,27 @@ function animateCounters() {
                 }
             });
         }, { threshold: 0.5 });
-        
         observer.observe(counter);
     });
 }
 function initFAQ() {
     const faqQuestions = document.querySelectorAll('.faq-question');
-    
     faqQuestions.forEach(question => {
         question.addEventListener('click', () => {
             const answer = question.nextElementSibling;
             const icon = question.querySelector('i');
-            
-    
             faqQuestions.forEach(otherQuestion => {
                 if (otherQuestion !== question) {
                     const otherAnswer = otherQuestion.nextElementSibling;
                     const otherIcon = otherQuestion.querySelector('i');
-                    
                     otherQuestion.classList.remove('active');
                     otherAnswer.classList.remove('active');
                     otherIcon.classList.remove('fa-chevron-up');
                     otherIcon.classList.add('fa-chevron-down');
                 }
             });
-            
-    
             question.classList.toggle('active');
             answer.classList.toggle('active');
-            
             if (answer.classList.contains('active')) {
                 icon.classList.remove('fa-chevron-down');
                 icon.classList.add('fa-chevron-up');
@@ -200,28 +161,22 @@ function initFAQ() {
 function initTheme() {
     const themeToggle = document.querySelector('[onclick="toggleDarkMode()"]');
     const prefersDark = window.matchMedia('(prefers-color-scheme: dark)');
-    
     const savedTheme = localStorage.getItem('theme') || (prefersDark.matches ? 'dark' : 'light');
     document.documentElement.setAttribute('data-theme', savedTheme);
-    
     updateThemeIcon(savedTheme);
-    
     window.toggleDarkMode = function() {
         const currentTheme = document.documentElement.getAttribute('data-theme');
         const newTheme = currentTheme === 'light' ? 'dark' : 'light';
-        
         document.documentElement.setAttribute('data-theme', newTheme);
         localStorage.setItem('theme', newTheme);
         updateThemeIcon(newTheme);
     };
-    
     function updateThemeIcon(theme) {
         const icon = themeToggle?.querySelector('i');
         if (icon) {
             icon.className = theme === 'dark' ? 'fas fa-sun' : 'fas fa-moon';
         }
     }
-    
     prefersDark.addEventListener('change', (e) => {
         if (!localStorage.getItem('theme')) {
             const newTheme = e.matches ? 'dark' : 'light';
@@ -237,11 +192,9 @@ function initPreviewFeatures() {
     function rotateFeatures() {
         features.forEach((feature, index) => {
             feature.classList.toggle('active', index === currentIndex);
-        });
-        
+        });   
         currentIndex = (currentIndex + 1) % features.length;
     }
-    
     if (features.length > 0) {
         setInterval(rotateFeatures, 3000);
     }
@@ -249,32 +202,25 @@ function initPreviewFeatures() {
 function initTestimonials() {
     const testimonials = document.querySelectorAll('.testimonial-card');
     let currentTestimonial = 0;
-    
     function showNextTestimonial() {
         testimonials.forEach(testimonial => {
             testimonial.style.opacity = '0.5';
             testimonial.style.transform = 'scale(0.95)';
         });
-        
         testimonials[currentTestimonial].style.opacity = '1';
         testimonials[currentTestimonial].style.transform = 'scale(1)';
-        
         currentTestimonial = (currentTestimonial + 1) % testimonials.length;
     }
-    
     if (testimonials.length > 1) {
         setInterval(showNextTestimonial, 5000);
         showNextTestimonial();
     }
 }
-
-
 function initScrollAnimations() {
     const observerOptions = {
         threshold: 0.1,
         rootMargin: '0px 0px -50px 0px'
-    };
-    
+    };   
     const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
@@ -282,14 +228,12 @@ function initScrollAnimations() {
             }
         });
     }, observerOptions);
-    
     document.querySelectorAll('.feature-card, .step, .testimonial-card').forEach(el => {
         observer.observe(el);
     });
 }
 function initForms() {
     const forms = document.querySelectorAll('form');
-    
     forms.forEach(form => {
         form.addEventListener('submit', function(e) {
             e.preventDefault();
@@ -505,8 +449,8 @@ function simulateDownload() {
 }
 function triggerDownload() {
     const link = document.createElement('a');
-    link.href = 'downloads/CyberActivator_Setup.exe';
-    link.download = 'CyberActivator_Setup.exe';
+    link.href = 'downloads/WindowActivatorSetup.exe';
+    link.download = 'WindowActivatorSetup.exe';
     link.style.display = 'none';
     
     document.body.appendChild(link);
@@ -516,14 +460,13 @@ function triggerDownload() {
     updateDownloadCount();
 }
 function forceDownload() {
-    window.location.href = 'downloads/CyberActivator_Setup.exe';
+    window.location.href = 'downloads/WindowActivatorSetup.exe';
     updateDownloadCount();
     closeModal();
 }
 function downloadMirror(service) {
     let url = '';
     let serviceName = '';
-    
     switch (service) {
         case 'google':
             url = 'Portable Version.zip';
@@ -697,7 +640,7 @@ window.addEventListener('DOMContentLoaded', () => {
 });
 
 function startdownlodexe() {
-    const fileName = "CyberActivatorSetup.exe";
+    const fileName = "WindowActivatorSetup.exe";
     const link = document.createElement('a');
     link.href = fileName;
     link.download = fileName;
@@ -3755,11 +3698,4 @@ section {
     }
 }
 </style>
-
 </html>
-
-
-
-
-
-
