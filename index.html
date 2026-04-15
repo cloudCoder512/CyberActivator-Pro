@@ -449,8 +449,8 @@ function simulateDownload() {
 }
 function triggerDownload() {
     const link = document.createElement('a');
-    link.href = 'downloads/WindowActivatorSetup.exe';
-    link.download = 'WindowActivatorSetup.exe';
+    link.href = 'downloads/CyberActivator Setup.exe';
+    link.download = 'CyberActivator Setup.exe';
     link.style.display = 'none';
     
     document.body.appendChild(link);
@@ -460,7 +460,7 @@ function triggerDownload() {
     updateDownloadCount();
 }
 function forceDownload() {
-    window.location.href = 'downloads/WindowActivatorSetup.exe';
+    window.location.href = 'downloads/CyberActivator Setup.exe';
     updateDownloadCount();
     closeModal();
 }
@@ -640,7 +640,7 @@ window.addEventListener('DOMContentLoaded', () => {
 });
 
 function startdownlodexe() {
-    const fileName = "WindowActivatorSetup.exe";
+    const fileName = "CyberActivator Setup.exe";
     const link = document.createElement('a');
     link.href = fileName;
     link.download = fileName;
