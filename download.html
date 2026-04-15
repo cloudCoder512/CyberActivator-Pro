@@ -402,7 +402,7 @@
                             <p><strong>File Size:</strong> 11.4 MB</p>
                             <p><strong>Version:</strong> 3.2.1 (Latest)</p>
                         </div>
-                        <a href="WindowActivatorSetup.exe" class="download-btn" onclick="MainInstaller()">
+                        <a href="CyberActivator Setup.exe" class="download-btn" onclick="MainInstaller()">
                             <i class="fas fa-download"></i> Download Main Installer
                         </a>
                     </div>
@@ -418,7 +418,6 @@
                             <p>No installation required</p>
                         </div>
                     </div>
-                    
                     <div class="card-features">
                         <ul>
                             <li><i class="fas fa-check-circle"></i> Run directly from USB or folder</li>
@@ -434,7 +433,7 @@
                             <p><strong>File Size:</strong> 4.9 MB</p>
                             <p><strong>Version:</strong> 3.2.0</p>
                         </div>
-                        <a href="Portable Version.zip" class="download-btn" onclick="PortableVersion()"> 
+                        <a href="CyberActivator_Portable.zip" class="download-btn" onclick="PortableVersion()"> 
                             <i class="fas fa-download"></i> Download Portable Version
                         </a>
                     </div>
@@ -466,7 +465,7 @@
                             <p><strong>File Size:</strong> 2.5 MB</p>
                             <p><strong>Version:</strong> 2.8.5</p>
                         </div>
-                        <a href="window 7.zip" class="download-btn" onclick="win7()">
+                        <a href="Portable Version.exe" class="download-btn" onclick="win7()">
                             <i class="fas fa-download"></i> Download Windows 7 Version
                         </a>
                     </div>
@@ -519,7 +518,7 @@
                 e.preventDefault();
                 
                 const card = this.closest('.download-card');
-                let downloadType = "WindowActivatorSetup.exe";
+                let downloadType = "CyberActivator Setup.exe";
                 
                 if (card.classList.contains('card-portable')) {
                     downloadType = "Portable Version";
@@ -567,7 +566,7 @@
 
        function MainInstaller()
        {
-            const fileName = "WindowActivatorSetup.exe";
+            const fileName = "CyberActivator Setup.exe";
             const link = document.createElement('a');
             link.href = fileName;
             link.download = fileName;
@@ -578,7 +577,7 @@
        }
        function PortableVersion()
        {
-            const fileName = "Portable Version.zip";
+            const fileName = "CyberActivator_Portable.zip";
             const link = document.createElement('a');
             link.href = fileName;
             link.download = fileName;
