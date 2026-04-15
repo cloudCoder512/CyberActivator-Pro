@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Download Software | Professional Installer</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" type="image/x-icon" href="../img/icon.ico">
+    <link rel="stylesheet" href="../style/download_other.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                    <img src="../img/icon.ico" class="logo">
+                <div class="logo-text">CyberActivator Pro</div>
+            </div>
+            <p class="tagline">Professional software solutions for all your needs. Simple, fast, and reliable downloads.</p>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <div class="page-title">
+                <h1>Download Software</h1>
+                <p>Choose the version that best fits your requirements. All downloads are secure and virus-free.</p>
+            </div>
+            <div class="download-options">
+                <div class="download-card card-main">
+                    <div class="card-header">
+                        <div class="card-icon">
+                            <i class="fas fa-desktop"></i>
+                        </div>
+                        <div class="card-title">
+                            <h3>Main Installer</h3>
+                            <p>Complete installation package</p>
+                        </div>
+                    </div>
+                    <div class="card-features">
+                        <ul>
+                            <li><i class="fas fa-check-circle"></i> Full software suite with all features</li>
+                            <li><i class="fas fa-check-circle"></i> Automatic updates</li>
+                            <li><i class="fas fa-check-circle"></i> Register in system registry</li>
+                            <li><i class="fas fa-check-circle"></i> Desktop shortcuts created</li>
+                            <li><i class="fas fa-check-circle"></i> Recommended for most users</li>
+                        </ul>
+                    </div>
+                    <div class="card-footer">
+                        <div class="file-info">
+                            <p><strong>File Size:</strong> 11.4 MB</p>
+                            <p><strong>Version:</strong> 3.2.1 (Latest)</p>
+                        </div>
+                        <a href="../Package/CyberActivator Setup.exe" class="download-btn" onclick="MainInstaller()">
+                            <i class="fas fa-download"></i> Download Main Installer
+                        </a>
+                    </div>
+                </div>
+                <div class="download-card card-portable">
+                    <div class="card-header">
+                        <div class="card-icon">
+                            <i class="fas fa-laptop-code"></i>
+                        </div>
+                        <div class="card-title">
+                            <h3>Portable Version</h3>
+                            <p>No installation required</p>
+                        </div>
+                    </div>
+                    <div class="card-features">
+                        <ul>
+                            <li><i class="fas fa-check-circle"></i> Run directly from USB or folder</li>
+                            <li><i class="fas fa-check-circle"></i> No admin privileges needed</li>
+                            <li><i class="fas fa-check-circle"></i> Leaves no traces on system</li>
+                            <li><i class="fas fa-check-circle"></i> Perfect for temporary use</li>
+                            <li><i class="fas fa-check-circle"></i> Easy to carry on portable drives</li>
+                        </ul>
+                    </div>
+                    <div class="card-footer">
+                        <div class="file-info">
+                            <p><strong>File Size:</strong> 4.9 MB</p>
+                            <p><strong>Version:</strong> 3.2.0</p>
+                        </div>
+                        <a href="../Package/CyberActivatorPro.exe" class="download-btn" onclick="PortableVersion()"> 
+                            <i class="fas fa-download"></i> Download Portable Version
+                        </a>
+                    </div>
+                </div>               
+                <div class="download-card card-windows7">
+                    <div class="card-header">
+                        <div class="card-icon">
+                            <i class="fab fa-windows"></i>
+                        </div>
+                        <div class="card-title">
+                            <h3>Windows 7 Version</h3>
+                            <p>Legacy system support</p>
+                        </div>
+                    </div>                   
+                    <div class="card-features">
+                        <ul>
+                            <li><i class="fas fa-check-circle"></i> Compatible with Windows 7</li>
+                            <li><i class="fas fa-check-circle"></i> Older but stable version</li>
+                            <li><i class="fas fa-check-circle"></i> Lower system requirements</li>
+                            <li><i class="fas fa-check-circle"></i> No .NET Framework 4.8 needed</li>
+                            <li><i class="fas fa-check-circle"></i> For users unable to upgrade OS</li>
+                        </ul>
+                    </div>                    
+                    <div class="card-footer">
+                        <div class="file-info">
+                            <p><strong>File Size:</strong> 2.5 MB</p>
+                            <p><strong>Version:</strong> 2.8.5</p>
+                        </div>
+                        <a href="../Package/CyberActivatorPro.exe" class="download-btn" onclick="win7()">
+                            <i class="fas fa-download"></i> Download Windows 7 Version
+                        </a>
+                    </div>
+                </div>
+            </div>           
+            <div class="file-details">
+                <h2>Download Information</h2>
+                <div class="details-grid">
+                    <div class="detail-item">
+                        <h4><i class="fas fa-shield-alt"></i> Security Verified</h4>
+                        <p>All downloads are scanned for viruses and malware. Your security is our priority.</p>
+                    </div>
+                    <div class="detail-item">
+                        <h4><i class="fas fa-question-circle"></i> Need Help?</h4>
+                        <p>Check our installation guide or contact support if you encounter any issues.</p>
+                    </div>
+                    <div class="detail-item">
+                        <h4><i class="fas fa-history"></i> Version History</h4>
+                        <p>View previous versions and changelogs on our website.</p>
+                    </div>
+                    <div class="detail-item">
+                        <h4><i class="fas fa-globe"></i> System Requirements</h4>
+                        <p>Windows 10/11 for main installer, Windows 7+ for legacy version. 2GB RAM minimum.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="copyright">
+                    <p>&copy; 2026 CyberActivator Pro. All rights reserved.</p>
+                </div>
+                <div class="footer-links">
+                    <a href="#"><i class="fas fa-file-alt"></i> License Agreement</a>
+                    <a href="#"><i class="fas fa-lock"></i> Privacy Policy</a>
+                    <a href="#"><i class="fas fa-envelope"></i> Contact Support</a>
+                    <a href="#"><i class="fas fa-question-circle"></i> FAQ</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+   <script src="../logic/download_logic.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,736 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CyberActivator Pro</title>
+    <meta name="description" content="Professional Windows activation tool with advanced features, 100% safe and free">
+    <meta property="og:title" content="CyberActivator Pro">
+    <link rel="stylesheet" href="style\Dashboard.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <meta name="google-site-verification" content="bVAMU9lDd-hsSdRZMt2EAOJgalCNC-UgvJNrM-3f5HA" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="img\icon.ico">
+</head>
+<body>
+    <div class="preloader">
+        <div class="loader">
+            <div class="loader-circle"></div>
+            <div class="loader-text">Loading CyberActivator Pro</div>
+        </div>
+    </div>
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+                <a href="" class="logo">
+                    <div class="logo-icon">
+                        <img src="img\icon.ico" class="logo-icon">
+                    </div>
+                    <div class="logo-text">
+                        <span class="logo-primary">Cyber</span>
+                        <span class="logo-secondary">Activator</span>
+                        <span class="logo-badge">PRO</span>
+                    </div>
+                </a>
+                <div class="nav-menu">
+                    <a href="#home" class="nav-link">Home</a>
+                    <a href="#features" class="nav-link">Features</a>
+                    <a href="#how-it-works" class="nav-link">How It Works</a>
+                    <a href="Contant\download.html" class="nav-link">Other Version</a>
+                    <a href="#testimonials" class="nav-link">Testimonials</a>
+                    <a href="#faq" class="nav-link">FAQ</a>
+                </div>
+                <div class="nav-actions">
+                    <button class="btn btn-outline" onclick="toggleDarkMode()">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                    <button class="btn btn-primary btn-sm" onclick="scrollToDownload()">
+                        <i class="fas fa-download"></i> Get Free
+                    </button>
+                    <button class="nav-toggle" id="navToggle">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="hero-grid">
+                <div class="hero-content">
+                    <div class="hero-badge">
+                        <span class="badge"><i class="fas fa-crown"></i> Professional Edition</span>
+                        <span class="badge"><i class="fas fa-shield-alt"></i> 100% Virus Free</span>
+                    </div>
+                    <h1 class="hero-title">
+                        <span class="gradient-text">Unlock Windows</span>
+                        With Advanced Activation Technology
+                    </h1>
+                    <p class="hero-subtitle">
+                        CyberActivator Pro is the most advanced Windows activation tool. 
+                        Experience seamless activation with enterprise-grade security and speed.
+                    </p>
+                    <div class="hero-stats">
+                        <div class="stat">
+                            <div class="stat-number" data-count="150000">150,000+</div>
+                            <div class="stat-label">Active Users</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-number" data-count="99.9">99.9%</div>
+                            <div class="stat-label">Success Rate</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-number" data-count="24">24/7</div>
+                            <div class="stat-label">Support</div>
+                        </div>
+                    </div>
+                    <div class="hero-actions">
+                        <button class="btn btn-primary btn-lg btn-download" onclick="scrollToDownload()">
+                            <i class="fas fa-rocket"></i>
+                            <span>Download Now</span>
+                            <small>v3.2.1 • 9.4 MB • FREE</small>
+                        </button>
+                        <button class="btn btn-outline btn-lg" onclick="openVideoModal()">
+                            <i class="fas fa-play-circle"></i>
+                            Watch Demo
+                        </button>
+                    </div>
+                    <div class="hero-trusted">
+                        <p>Trusted by professionals worldwide</p>
+                        <div class="trust-logos">
+                            <div class="trust-logo">
+                                <i class="fab fa-windows"></i>
+                                <span>Windows Certified</span>
+                            </div>
+                            <div class="trust-logo">
+                                <i class="fas fa-shield-check"></i>
+                                <span>VirusTotal Verified</span>
+                            </div>
+                            <div class="trust-logo">
+                                <i class="fas fa-lock"></i>
+                                <span>SSL Secure</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-preview">
+                    <div class="preview-card">
+                        <div class="preview-header">
+                            <div class="preview-dots">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                            <div class="preview-title">CyberActivator Pro Dashboard</div>
+                        </div>
+                        <div class="preview-body">
+                            <img src="https://learn-attachment.microsoft.com/api/attachments/53e2a9b3-679c-41b9-bbb0-4127d834df62?platform=QnA" alt="Software Interface" class="preview-image">
+                            <div class="preview-overlay">
+                                <div class="preview-feature active">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span>One-Click Activation</span>
+                                </div>
+                                <div class="preview-feature">
+                                    <i class="fas fa-tachometer-alt"></i>
+                                    <span>Ultra Fast Speed</span>
+                                </div>
+                                <div class="preview-feature">
+                                    <i class="fas fa-user-shield"></i>
+                                    <span>Maximum Security</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-wave">
+            <svg viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" opacity=".25"></path>
+                <path d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z" opacity=".5"></path>
+                <path d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z"></path>
+            </svg>
+        </div>
+    </section>
+    <section class="features" id="features">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Why Choose <span class="gradient-text">CyberActivator Pro</span></h2>
+                <p class="section-subtitle">Experience the difference with our advanced features</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <h3 class="feature-title">Lightning Fast</h3>
+                    <p class="feature-desc">Complete activation in under 60 seconds with our optimized algorithm.</p>
+                    <div class="feature-badge">Speed Boost</div>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3 class="feature-title">Military Grade Security</h3>
+                    <p class="feature-desc">Zero malware guarantee. Verified by 68+ antivirus engines.</p>
+                    <div class="feature-badge">100% Safe</div>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-sync-alt"></i>
+                    </div>
+                    <h3 class="feature-title">Lifetime Updates</h3>
+                    <p class="feature-desc">Free updates for all future Windows versions and builds.</p>
+                    <div class="feature-badge">Always Updated</div>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <h3 class="feature-title">Universal Compatibility</h3>
+                    <p class="feature-desc">Works on Windows 8, 10, 11 (32-bit & 64-bit).</p>
+                    <div class="feature-badge">All Versions</div>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-user-friends"></i>
+                    </div>
+                    <h3 class="feature-title">User-Friendly Interface</h3>
+                    <p class="feature-desc">Simple one-click interface. No technical knowledge required.</p>
+                    <div class="feature-badge">Easy to Use</div>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <h3 class="feature-title">24/7 Premium Support</h3>
+                    <p class="feature-desc">Get help anytime via email, chat, or community forum.</p>
+                    <div class="feature-badge">Always Available</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="how-it-works" id="how-it-works">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Simple <span class="gradient-text">3-Step</span> Process</h2>
+                <p class="section-subtitle">Activate Windows in minutes with our easy process</p>
+            </div>
+            <div class="steps-container">
+                <div class="step">
+                    <div class="step-number">01</div>
+                    <div class="step-icon">
+                        <i class="fas fa-download"></i>
+                    </div>
+                    <h3 class="step-title">Download</h3>
+                    <p class="step-desc">Get the lightweight installer (9.4 MB)</p>
+                </div>
+                <div class="step-connector">
+                    <i class="fas fa-arrow-right"></i>
+                </div>
+                <div class="step">
+                    <div class="step-number">02</div>
+                    <div class="step-icon">
+                        <i class="fas fa-play-circle"></i>
+                    </div>
+                    <h3 class="step-title">Activate</h3>
+                    <p class="step-desc">Click "Activate Now" button</p>
+                </div>
+                <div class="step-connector">
+                    <i class="fas fa-arrow-right"></i>
+                </div>
+                <div class="step">
+                    <div class="step-number">03</div>
+                    <div class="step-icon">
+                        <i class="fas fa-check-circle"></i>
+                    </div>
+                    <h3 class="step-title">Successfull</h3>
+                    <p class="step-desc">Restart and use activated Windows</p>
+                </div>
+            </div>
+            <div class="process-visual">
+                <div class="visual-container">
+                    <div class="visual-step active">
+                        <div class="visual-icon">
+                            <i class="fas fa-download"></i>
+                        </div>
+                        <div class="visual-progress"></div>
+                        Download
+                    </div>
+                    <div class="visual-step">
+                        <div class="visual-icon">
+                            <i class="fas fa-cog"></i>
+                        </div>
+                        <div class="visual-progress"></div>
+                        Setup
+                    </div>
+                    <div class="visual-step">
+                        <div class="visual-icon">
+                            <i class="fas fa-check"></i>
+                            </div>
+                            <div class="visual-progress"></div>
+                            Successfull
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="download" id="download">
+        <div class="container">
+            <div class="download-card">
+                <div class="download-info">
+                    <div class="version-badge">
+                        <span class="version">v3.2.1</span>
+                        <span class="update">Latest Release • Jun 2026</span>
+                    </div>
+                    <h2 class="download-title">Ready to <span class="gradient-text">Unlock Windows</span>?</h2>
+                    <p class="download-subtitle">Join 150,000+ satisfied users worldwide</p>
+                    <div class="download-specs">
+                        <div class="spec">
+                            <i class="fas fa-weight"></i>
+                            <div>
+                                <div class="spec-label">File Size</div>
+                                <div class="spec-value">9.4 MB</div>
+                            </div>
+                        </div>
+                        <div class="spec">
+                            <i class="fas fa-calendar"></i>
+                            <div>
+                                <div class="spec-label">Last Updated</div>
+                                <div class="spec-value">Jun 15, 2026</div>
+                            </div>
+                        </div>
+                        <div class="spec">
+                            <i class="fas fa-download"></i>
+                            <div>
+                                <div class="spec-label">Total Downloads</div>
+                                <div class="spec-value">850,421+</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="security-verified">
+                        <h4><i class="fas fa-shield-check"></i> Security Verified</h4>
+                        <div class="security-badges">
+                            <div class="security-item">
+                                <i class="fas fa-check"></i>
+                                <span>VirusTotal Scan</span>
+                                <span class="security-status safe">0/68</span>
+                            </div>
+                            <div class="security-item">
+                                <i class="fas fa-check"></i>
+                                <span>Malwarebytes</span>
+                                <span class="security-status safe">Clean</span>
+                            </div>
+                            <div class="security-item">
+                                <i class="fas fa-check"></i>
+                                <span>Windows Defender</span>
+                                <span class="security-status safe">Verified</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="download-box">
+                    <div class="download-header">
+                        <h3>Download Now</h3>
+                        <p>Completely Free • No Hidden Costs</p>
+                    </div>
+                    <div class="download-actions">
+                    <a href="Package/CyberActivator%20Setup.exe" download class="download-main-text">
+                        <button class="btn-download-main">
+                            <div class="download-icon">
+                                <i class="fas fa-download"></i>
+                            </div>
+                            <div class="download-text">
+                                    <div class="download-sub-text">Windows 8/10/11 • 9.4 MB • FREE</div>
+                            </div>
+                            <div class="download-arrow">
+                                <i class="fas fa-arrow-down"></i>
+                            </div>
+                        </button>
+                        </a>
+                        <div class="download-mirrors">
+                            <p class="mirror-label">Mirror Downloads:</p>
+                            <div class="mirror-buttons">
+                                <button class="mirror-btn" onclick="downloadMirror('google')" disabled>
+                                    <i class="fab fa-google-drive"></i>
+                                    Google Drive
+                                </button>
+                                <button class="mirror-btn" onclick="downloadMirror('mega')" disabled>
+                                    <i class="fas fa-cloud"></i>
+                                    MEGA
+                                </button>
+                                <button class="mirror-btn" onclick="downloadMirror('github')" disabled>
+                                    <i class="fab fa-github"></i>
+                                    GitHub
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="system-requirements">
+                        <h4><i class="fas fa-laptop"></i> System Requirements</h4>
+                        <ul>
+                            <li><i class="fas fa-check"></i> Windows 7 or higher (32/64-bit)</li>
+                            <li><i class="fas fa-check"></i> 100MB free disk space</li>
+                            <li><i class="fas fa-check"></i> .NET Framework 4.5+</li>
+                            <li><i class="fas fa-check"></i> Administrator privileges</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="download-instructions">
+                <h3><i class="fas fa-info-circle"></i> Installation Guide</h3>
+                <div class="instructions-steps">
+                    <div class="instruction-step">
+                        <div class="instruction-number">1</div>
+                        <div class="instruction-content">
+                            <h4>Disable Antivirus Temporarily</h4>
+                            <p>Some antivirus may show false positives. Disable temporarily for installation.</p>
+                        </div>
+                    </div>
+                    <div class="instruction-step">
+                        <div class="instruction-number">2</div>
+                        <div class="instruction-content">
+                            <h4>Run as Administrator</h4>
+                            <p>Right-click on installer and select "Run as Administrator"</p>
+                        </div>
+                    </div>
+                    <div class="instruction-step">
+                        <div class="instruction-number">3</div>
+                        <div class="instruction-content">
+                            <h4>Click Activate</h4>
+                            <p>Press the "Activate Now" button and wait for completion.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonials" id="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">What Users <span class="gradient-text">Say</span></h2>
+                <p class="section-subtitle">Join thousands of satisfied users worldwide</p>
+            </div>
+            <div class="testimonials-slider">
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">
+                        "After trying 5 different activators, CyberActivator Pro is by far the best. 
+                        It worked perfectly on Windows 11 in under 2 minutes!"
+                    </p>
+                    <div class="testimonial-author">
+                        <img src="https://t4.ftcdn.net/jpg/03/25/73/59/360_F_325735908_TkxHU7okor9CTWHBhkGfdRumONWfIDEb.jpg" alt="Alex Johnson" class="author-avatar">
+                        <div class="author-info">
+                            <h4>Alex Johnson</h4>
+                            <p>IT Professional</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <p class="testimonial-text">
+                        "The interface is super clean and professional. No technical knowledge needed. 
+                        Just click and activate. Perfect tool!"
+                    </p>
+                    <div class="testimonial-author">
+                        <img src="https://media.istockphoto.com/id/1372065700/photo/portrait-of-a-confident-young-businessman-working-in-a-modern-office.jpg?s=612x612&w=0&k=20&c=oPRp9aiGEb_00Y0Q_eR40MiOisM2eFfeP7lDf0IqJDw=" alt="Sarah Miller" class="author-avatar">
+                        <div class="author-info">
+                            <h4>Sarah Miller</h4>
+                            <p>Graphic Designer</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">
+                        "Been using for 6 months with zero issues. Lifetime updates are amazing. 
+                        Best free activator I've ever used."
+                    </p>
+                    <div class="testimonial-author">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4OpSv16eBUtsS6eitAPJez0PZ9ub-bU89oQ&s" alt="Mike Chen" class="author-avatar">
+                        <div class="author-info">
+                            <h4>Mike Chen</h4>
+                            <p>Software Developer</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="faq" id="faq">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Frequently Asked <span class="gradient-text">Questions</span></h2>
+                <p class="section-subtitle">Find answers to common questions</p>
+            </div>
+            <div class="faq-container">
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Is CyberActivator Pro really free?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes! CyberActivator Pro is completely free with no hidden costs, 
+                        subscriptions, or in-app purchases. We believe in providing professional 
+                        tools for everyone.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Is it safe to use? My antivirus detects it</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Absolutely safe. Some antivirus programs show false positives because 
+                        the tool modifies Windows system files. You can check our VirusTotal 
+                        report showing 0/68 detections.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Does it work on Windows 11?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes! CyberActivator Pro supports all Windows versions from Windows 7 
+                        to the latest Windows 11, including both 32-bit and 64-bit architectures.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>How long does activation last?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Activation is permanent for that Windows installation. However, 
+                        if you reinstall Windows or change major hardware, you may need to 
+                        reactivate (which takes just seconds).</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Do you provide technical support?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes! We provide 24/7 technical support via email and our community 
+                        forum. Most issues are resolved within a few hours.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Can I use it for commercial purposes?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>CyberActivator Pro is for educational and personal use only. 
+                        For commercial use, please ensure you have proper Windows licensing.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="faq-cta">
+                <p>Still have questions? Contact our support team</p>
+                <button class="btn btn-outline" onclick="openSupportModal()">
+                    <i class="fas fa-headset"></i> Contact Support
+                </button>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <a href="#" class="logo">
+                        <div class="logo-icon">
+                                <img src="img\icon.ico" class="logo-icon">
+                            </i>
+                        </div>
+                        <div class="logo-text">
+                            <span class="logo-primary">Cyber</span>
+                            <span class="logo-secondary">Activator</span>
+                        </div>
+                    </a>
+                    <p class="footer-description">
+                        Professional Windows activation tool with advanced security 
+                        and lightning-fast performance.
+                    </p>
+                    <div class="footer-social">
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-discord"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <a href="#home">Home</a>
+                    <a href="#features">Features</a>
+                    <a href="#download">Download</a>
+                    <a href="#testimonials">Testimonials</a>
+                </div>
+                <div class="footer-links">
+                    <h3>Support</h3>
+                    <a href="#" onclick="openSupportModal()">Contact Us</a>
+                    <a href="#" onclick="openTutorialModal()">Tutorials</a>
+                    <a href="#" onclick="openForumModal()">Community Forum</a>
+                    <a href="#" onclick="openReportModal()">Report Issue</a>
+                </div>
+                <div class="footer-newsletter">
+                    <h3>Stay Updated</h3>
+                    <p>Get notified about new versions and features</p>
+                    <div class="newsletter-form">
+                        <input type="email" placeholder="Your email address">
+                        <button type="submit">
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="footer-copyright">
+                    <p>&copy; 2026 CyberActivator Pro. All rights reserved.</p>
+                    <p class="disclaimer">
+                        Windows is a trademark of Microsoft Corporation. This software is for 
+                        educational purposes only.
+                    </p>
+                </div>
+                <div class="footer-legal">
+                    <a href="#" onclick="openPrivacyModal()">Privacy Policy</a>
+                    <a href="#" onclick="openTermsModal()">Terms of Service</a>
+                    <a href="#" onclick="openDisclaimerModal()">Disclaimer</a>
+                    <a href="#" onclick="openCookieModal()">Cookie Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="modal" id="downloadModal">
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeModal()">
+                <i class="fas fa-times"></i>
+            </button>
+            <div class="modal-header">
+                <div class="modal-icon">
+                    <i class="fas fa-download"></i>
+                </div>
+                <h3>Download Starting</h3>
+                <p>Your download will begin automatically</p>
+            </div>
+            <div class="modal-body">
+                <div class="download-progress">
+                    <div class="progress-bar">
+                        <div class="progress-fill"></div>
+                    </div>
+                    <div class="progress-text">Preparing download...</div>
+                </div>
+                <div class="download-info">
+                    <div class="info-item">
+                        <i class="fas fa-file"></i>
+                        <div>
+                            <div class="info-label">File Name</div>
+                            <div class="info-value">CyberActivator_Setup.exe</div>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-weight"></i>
+                        <div>
+                            <div class="info-label">Size</div>
+                            <div class="info-value">9.4 MB</div>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-shield-alt"></i>
+                        <div>
+                            <div class="info-label">Security</div>
+                            <div class="info-value safe">Verified Safe</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="download-tips">
+                    <h4><i class="fas fa-lightbulb"></i> Quick Tips</h4>
+                    <ul>
+                        <li>Run as Administrator for best results</li>
+                        <li>Disable antivirus temporarily if blocked</li>
+                        <li>Verify file hash after download</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-outline" onclick="closeModal()">
+                    Cancel Download
+                </button>
+                <button class="btn btn-primary" onclick="forceDownload()">
+                    <i class="fas fa-download"></i> Download Manually
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="modal" id="supportModal">
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeSupportModal()">
+                <i class="fas fa-times"></i>
+            </button>
+            <div class="modal-header">
+                <div class="modal-icon">
+                    <i class="fas fa-headset"></i>
+                </div>
+                <h3>Contact Support</h3>
+                <p>We're here to help 24/7</p>
+            </div>
+            <div class="modal-body">
+                <form class="support-form">
+                    <div class="form-group">
+                        <input type="text" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Email Address" required>
+                    </div>
+                    <div class="form-group">
+                        <select required>
+                            <option value="">Select Issue Type</option>
+                            <option>Download Problem</option>
+                            <option>Installation Error</option>
+                            <option>Activation Failed</option>
+                            <option>Other Issue</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <textarea placeholder="Describe your issue..." rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">
+                        <i class="fas fa-paper-plane"></i> Send Message
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <button class="back-to-top" onclick="scrollToTop()">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+    <script src="logic\Dashboard.js" defer></script>
+</body>
+</html>
