@@ -11,7 +11,7 @@
   <img src="https://img.shields.io/badge/Downloads-50K%2B-orange">
   <img src="https://img.shields.io/badge/Status-Active-success">
   <br><br>
-  <img src="img/Screenshot 2026-05-06 162016.png" alt="GUI Interface" width="80%">
+  <img src="https://github.com/cloudCoder512/product-key/raw/master/img/Screenshot%202026-05-06%20162016.png" alt="GUI Interface" width="80%">
 </div>
 
 ---
